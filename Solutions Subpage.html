@@ -1,0 +1,151 @@
+<html><head>
+  <title>E-banking Security Solutions</title>
+  <style>
+
+   	p {text-align: left; font-size: 20;}
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    h3 {text-align: left;} 
+
+    header{
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    header h1 {
+      font-size: 2.3em;
+    }
+    
+    header h2 {
+      font-size: 2.3em;
+    }
+    
+    header h3 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+
+    .solutions-inner h2{
+      text-align: center;
+      font-size: 40;
+    }
+  
+    .solutions-h{
+      margin: 20px auto;
+      text-align: center;
+      background-color: skyblue;
+      font-size: 30;
+
+    }
+
+    .solutions-content h3 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .solutions-content p{
+      margin-top: 0;
+    }
+
+  </style>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var images = document.querySelectorAll(".gallery img");
+      var popup = document.querySelector(".popup");
+      var popupContent = document.querySelector(".popup-content");
+      
+      images.forEach(function(image) {
+        image.addEventListener("click", function() {
+          var imgSrc = this.getAttribute("src");
+          var imgAlt = this.getAttribute("alt");
+          var description = this.getAttribute("data-description");
+          popupContent.innerHTML = "<img src='" + imgSrc + "' alt='" + imgAlt + "'<p>" + description + "</p>";
+          popup.style.display = "flex";
+        });
+      });
+      
+      popup.addEventListener("click", function() {
+        popup.style.display = "none";
+      });
+    });
+  </script>
+
+</head>
+	<body style="background-color:white;">
+
+<header>
+    <center>
+        <h1>CS1102 - Course Project - 2024/2025 Semester B </h1>
+        <h2>Threat and Solutions for Internet Security in E-Banking</h2>
+        <h3>Wong Ka Ki 58530566, Ngai Ming Chu 58532702, Chan Hoi Lam 57223300</h3>
+        <br>
+    </center>
+     </header>
+  
+  <h3><a href="file:///Users/wkk/Desktop/Whole%20Project/index.html">Return Home Page</a></h3>
+
+	<div class="solutions-container">
+  	<div class="solutions-inner">
+      <h2 class="solutions-head">E-banking Security Solutions</h2>
+      
+      <div class="solutions1">
+        <h3 class="solutions-h">Multi-factor Authentication:</h3>
+        <center>
+        <img src ="https://i.pinimg.com/736x/3a/af/27/3aaf27eeae73bbfa308f73a55612bec3.jpg" width="400px">
+      </center>
+        <p> Multi-factor authentication (MFA) is one of the identity authentication techniques. It requires the user to provide multiple verification factors to log in to the account successfully. Lots of companies apply this technique to deal with the problems of phishing and Man-in-the-Middle attacks. There are three types of authentication factors. </p>
+
+        <p> 1. Possession factors: the user owns to prove their identity, such as a one-time password sent to phone via SMS </p>
+
+        <p> 2. Inherent factors: verified by unique biological features of the user, such as fingerprints </p>
+
+        <p> 3, Behavioural factors: verified by the behaviour pattern, such as the  IP address</p>
+
+        <p> For benefits, it is difficult for the attacker to impersonate users. Even if a password is stolen, attackers cannot easily log in to the account, which reduces the risk significantly. The possibility of an MFA-enabled account being leaked is 99.9% lower than a password-only account. It reflects the reliability of MFA, which can greatly reduce the problem of account leakage.</p>
+
+        <p> For drawbacks, MPS degrades the user experience. Because of the numerous steps involved in MFA validation, it can be frustrating for the user. Also, some of the verification has high environmental requirements, such as lighting, which may increase authentication time and make the user feel annoyed.</p>
+      </div>
+
+      <br>
+
+      <div class="solutions2">
+        <h3 class="solutions-h">Encryption:</h3>
+        <center>
+        <img src ="https://i.pinimg.com/736x/a3/e9/7e/a3e97eb11b0fdae9798b7f6160b04d1c.jpg" width="400px">
+      </center>
+
+        <p> Encryption is primarily used to protect critical information. There are several data encryption methods, for example, Advanced Encryption Standard (AES) encrypts 128-bit data, and Triple Data Encryption Standard (TDES) utilises 56-bit keys to encrypt data blocks  </p>
+
+
+        <p>For benefits, encryption plays an important role in protecting IT assets and personally identifiable information. It achieves confidentiality, which prevents data decryption when hacking by converting the information. Moreover, it can authenticate the source of the encoded data. Lastly, encrypted data cannot be changed, which ensures its integrity. </p>
+
+        <p> For drawbacks, the major challenge is key management. The key is the only way people can see the encrypted data. When the key is lost or damaged, the encrypted message cannot be opened even by the data owner. Moreover, Brute force attack is the official name for hackers seeking to guess the decryption key. An increasing number of hackers focus their attacks on keys. With technological advancements, the risk of users being hacked is increasing.</p>
+      </div>
+
+      <br> 
+      <div class="solutions3">
+        <h3 class="solutions-h">AI-based Fraud Detection:</h3>
+        <center>
+        <img src ="https://i.pinimg.com/736x/56/3e/aa/563eaaef1cf18c2f69537605da983f8a.jpg" width="400px">
+      </center>
+        <p> AI-based fraud detection utilises AI and Machine Learning (ML) algorithms to analyse patterns in e-banking data and recognise suspicious patterns. AI-based fraud detection will first collect, process and categorise historical data. In the next stage, data engineers will provide examples of various bank fraud patterns to the machine. </p>
+
+        <p>There are several reasons and benefits to using AI-based fraud detection in the e-banking industry.</p>
+
+        <p>1. AI-based fraud is more efficient. The big data processing capability of AI is better than that of traditional machines. The findings analysed by the AI are also more comprehensive and accurate.</p>
+
+        <p>2. AI can provide an immediate response. It can provide real-time data about transactions, payment methods and app usage.  When fraudulent behaviour occurs in the process, the transaction can be immediately suspended and reported to the bank. </p>
+
+        <p> For drawbacks, the most obvious challenge is the long-term maintenance costs. As deception approaches are constantly shifting, the AI machine needs to be monitored and improved to ensure its effectiveness. Therefore, the bank needs to spend lots of time and money on maintenance. </p>
+      </div>
+
+    </div>
+
+</body></html>
