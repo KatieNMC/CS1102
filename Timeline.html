@@ -1,0 +1,171 @@
+<html><head>
+  <title>Timeline of E-banking</title>
+  <style>
+    p{text-align: center}
+   	h1 {text-align: center}
+    h2 {text-align: center;}
+    h3 {text-align: left;}
+
+    header{
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    header h1 {
+      font-size: 2.3em;
+    }
+    
+    header h2 {
+      font-size: 2.3em;
+    }
+    
+    header h3 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .timeline {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .timeline-inner h2{
+      text-align: center;
+      font-size: 40;
+    }
+
+    .timeline-item  {
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .timeline-date {
+      background-color: skyblue;
+      font-weight: bold;
+      text-align: center;
+      font-size: 30;
+    }
+
+    .timeline-content {
+      margin-left: 10px;
+      text-align: center;
+    }
+
+    .timeline-content h3 {
+      margin-top: 0;
+      text-align: center;
+      font-size: 25;
+    }
+
+    .timeline-content p {
+      margin-bottom: 0;
+      font-size: 20;
+
+    }
+
+  </style>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var images = document.querySelectorAll(".gallery img");
+      var popup = document.querySelector(".popup");
+      var popupContent = document.querySelector(".popup-content");
+      
+      images.forEach(function(image) {
+        image.addEventListener("click", function() {
+          var imgSrc = this.getAttribute("src");
+          var imgAlt = this.getAttribute("alt");
+          var description = this.getAttribute("data-description");
+          popupContent.innerHTML = "<img src='" + imgSrc + "' alt='" + imgAlt + "'<p>" + description + "</p>";
+          popup.style.display = "flex";
+        });
+      });
+      
+      popup.addEventListener("click", function() {
+        popup.style.display = "none";
+      });
+    });
+  </script>
+
+</head>
+	<body style="background-color:white;">
+
+<header>
+    <center>
+        <h1>CS1102 - Course Project - 2024/2025 Semester B </h1>
+        <h2>Threat and Solutions for Internet Security in E-Banking</h2>
+        <h3>Wong Ka Ki 58530566, Ngai Ming Chu 58532702, Chan Hoi Lam 57223300</h3>
+        <br>
+    </center>
+     </header>
+  <h3><a href="file:///Users/wkk/Desktop/Whole%20Project/index.html">Return Home Page</a></h3>
+
+  <div class="timeline-container">
+    <div class="timeline-inner">
+      <h2 class="timeline-head">Timeline of E-banking</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">1994</div>
+          <div class="timeline-content">
+            <h3>First Online Banking Service</h3>
+            <img src ="https://content.energage.com/company-images/54514/logo.png" width="300px">
+            <p>Stanford Federal Credit Union is the first institution to offer Internet banking services to all clients.</p>
+          </div>
+
+        <br>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2006</div>
+          <div class="timeline-content">
+            <h3>The Growth of Internet Banking</h3>
+            <img src ="https://i.pinimg.com/736x/8f/9f/79/8f9f794801575dec684b98d720cf9bc3.jpg" width="400px">
+            <p>80% of U.S. Banks offered online banking services.</p>
+          </div>
+
+        <br>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2009</div>
+            <div class="timeline-content">
+            <h3>The First Virtual Banking</h3>
+            <img src ="https://i.pinimg.com/736x/25/7f/7e/257f7e15c1ca6441887d91dc53f447f7.jpg" width="400px">
+            <p>Ally Bank was founded.</p>
+          </div>
+
+        <br>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+            <h3>Mobile Banking</h3>
+            <img src ="https://i.pinimg.com/736x/f8/e9/54/f8e954af7fc2cb7e13612641fe29fee7.jpg" width="400px">
+            <p>80% of the world's bank clients were frequent users of mobile banking technology.</p>
+          </div>
+
+        <br>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Future</div>
+            <div class="timeline-content">
+            <h3>Completely Utilise E-banking</h3>
+            <img src ="https://i.pinimg.com/736x/91/84/2f/91842f280de913d35257296771f547a8.jpg" width="400px">
+            <p>Western countries will become cashless societies, which means that E-banking will be fully utilised.</p>
+            <br>
+            <br>
+            <h3>Utilise Avdanced Technologies</h3>
+            <img src ="https://i.pinimg.com/736x/fa/29/70/fa2970d17e2bbc7603b171ec231b6a4e.jpg" width="400px">
+            <p>Banks will apply more AI and machine learning in E-banking to improve efficiency.</p>
+          </div>      
+    </div>
+  </div>
+
+    </div>
+
+</body></html>
